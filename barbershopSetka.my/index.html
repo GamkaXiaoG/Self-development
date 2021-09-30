@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title> Барбершоп Бородинский </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="main-navigation">
+            <img src="/svg/index-logo.svg" width="371" height="195" alt="Лого">
+        <div class="main-navigation-wrapper">
+            <div class="container">
+            <ul class="site-navigation">
+                <li><a href="">Информация</a></li>
+                <li><a href="">Новости</a></li>
+                <li><a href="">Прайс-Лист</a></li>
+                <li><a href="/shop.html">Магазин</a></li>
+                <li><a href="">Контакты</a></li>
+            </ul>
+            <ul class="user-navigation">
+                <li><a href="">Вход</a></li>
+            </ul>
+            </div>
+        </div>
+        </nav>
+    </header>
+    <main class="container">
+        <h1>Барбершоп Бородинский</h1>
+        <section class="main-features">
+            <ul class="features">
+                <li class="features-items">
+                    <h3>Быстро</h3>
+                    <p>Мы делаем свою работу быстро! Два часа<br>
+                    пролетят незаметно и вы - счастливый<br>
+                    обладатель стильной стрижки-минутки!</p>
+                </li>
+                <li class="features-items">
+                    <h3>Круто</h3>
+                    <p>Забудьте, как вы стриглись раньше.<br>
+                    Мы сделаем из Вас звезду футбола или кино!<br>
+                    во всяком случае внешне.</p>
+                </li>
+                <li class="features-items">
+                    <h3>Дорого</h3>
+                    <p>Наши мастера - профессионалы своего дела и<br>
+                    не могут стоить дешево. К тому же, разве цена<br>
+                    не дает определеный статус?</p>
+                </li>
+            </ul>
+         </section>
+    </main>
+    <div class="container">
+    <div class="index-colums">
+    <section class="news">
+        <h2>Новости</h2>
+        <div class="news-items">
+        <ul class="news-list">
+            <li>
+                <p>Нам наконец завезли ягермайстер! Теперь вы можете <br>
+                пропустить стаканчик во время стрижки</p>
+                <time datetime="2019-01-11">11 я    нваря</time>
+            </li>
+            <li>
+                <p>В нашей команде пополнение, Борик "Бритва" Стригунец,<br>
+                обладатель множества титулов и наград пополнил наши<br>
+                стройные ряды</p>
+                <time datetime="2019-01-18">18 января</time>
+            </li>
+        </ul>
+        </div>
+        <button type="button" class="button-news">Все новости</button>
+    </section>
+        <section class="gallery">
+            <h2>Фотогалерея</h2>
+            <div class="gallery-container">
+            <figure class="gallery-content">
+                <a href=""><img src="jpg/Layer21.jpg" alt="Интерьер"></a>
+            </figure>
+            <button type="button" class="button button-size button-back">Назад</button>
+            <button type="button" class="button button-size button-next">Вперед</button>
+            </div>
+        </section>
+        </div>
+        </div>
+    <div class="container">    
+    <div class="index-colums">
+    <section class="contacts-index">
+        <h2>Контактная информация</h2>
+        <ul class="contacts-item">
+            <li class="contacts">
+                <p>Барбершоп "Бородинский"<br>
+        Адрес:Г. Санкт-Петербург, Б.Конюшенная, Д. 19/8<br>
+        Телефон: +7 (495) 666-02-66</p>
+            </li>
+            <li>
+                <p>Время работы:<br>
+                ПН-ПТ: С 10:00 до 22:00<br>
+                СБ-ВС: С 10:00 до 19:00</p>
+            </li>
+        </ul>
+        <button type="button">Как проехать</button>
+        <button type="button">Обратная связь</button>
+    </section>
+
+    <section class="appointment-index">
+        <h2>Записаться</h2>
+        <p>Укажите желаемую дату и время и мы свяжемся<br> 
+        с вами для подтверждения брони</p>
+        <form class="appointment-form" action="#" method="POST">
+            <p class="appointment-item">
+                <label for="appointment-date">Дата</label>
+                <input type="text" id="appointment-date" name="date" placeholder="08.10.2017" value="" autocomplete="off">
+            </p>
+            <p class="appointment-item">
+                <label for="appointment-text">Время</label>
+                <input type="text" id="appointment-text" name="time" placeholder="10:00" value="" autocomplete="off">
+            </p>
+            <p class="appointment-item">
+                <label for="appointment-name">Ваше имя</label>
+                <input type="text" id="appointment-name" name="username" placeholder="Борода" value="" autocomplete="off">
+            </p>
+            <p class="appointment-item">
+                <label for="appointment-tel">Телефон</label>
+                <input type="tel" id="appointment-tel" name="usertel" placeholder="+7 123 456-78-90" value="" autocomplete="off">
+            </p>
+            <button type="submit">Отправить</button>
+        </form>
+    </section>
+    </div>
+    </div>
+    <footer class="main-footer">
+        <div class="container">
+    <div class="footer-contacts">
+        <p >Барбершоп "Бородинский"<br>
+        Адрес:Г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+        <a href="">Как нас найти?</a><br>
+        Телефон : +7 (495) 666-02-66</p>
+    </div>
+
+        <div class="footer-social">
+            <p>Давайте дружить!</p>
+            <ul class="social-flex">
+                    <li><a class="social-button" href=""><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 455 455" style="enable-background:new 0 0 455 455;" xml:space="preserve">
+                   <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M0,0v455h455V0H0z M341.098,251.727c10.445,10.19,21.49,19.784,30.865,31.049
+                       c4.142,4.978,8.06,10.113,11.046,15.881c4.239,8.264,0.397,17.318-6.985,17.817l-45.875-0.02
+                       c-11.841,0.973-21.277-3.801-29.235-11.902c-6.328-6.45-12.243-13.354-18.352-20.023c-2.486-2.746-5.115-5.314-8.239-7.362
+                       c-6.267-4.061-11.703-2.828-15.285,3.699c-3.643,6.649-4.499,14.031-4.835,21.435c-0.499,10.807-3.76,13.634-14.607,14.154
+                       c-23.208,1.075-45.218-2.451-65.659-14.134c-18.052-10.307-32.022-24.879-44.184-41.356
+                       c-23.702-32.124-41.855-67.391-58.154-103.673c-3.684-8.177-0.993-12.559,7.999-12.717c14.99-0.296,29.974-0.26,44.943-0.02
+                       c6.089,0.102,10.129,3.582,12.458,9.334c8.101,19.906,18.01,38.85,30.448,56.427c3.327,4.677,6.71,9.334,11.504,12.636
+                       c5.314,3.663,9.375,2.466,11.881-3.485c1.595-3.78,2.293-7.8,2.629-11.841c1.192-13.833,1.335-27.681-0.718-41.473
+                       c-1.274-8.621-6.149-14.195-14.745-15.825c-4.382-0.836-3.725-2.446-1.615-4.958c3.704-4.315,7.189-7.006,14.093-7.006h51.847
+                       c8.177,1.595,10.011,5.278,11.122,13.497l0.041,57.619c-0.097,3.184,1.595,12.615,7.306,14.704
+                       c4.575,1.513,7.622-2.171,10.368-5.075c12.417-13.176,21.277-28.756,29.194-44.877c3.505-7.087,6.532-14.449,9.477-21.817
+                       c2.17-5.452,5.553-8.137,11.703-8.04l49.916,0.061c1.472,0,2.986,0,4.438,0.239c8.396,1.452,10.705,5.075,8.096,13.293
+                       c-4.076,12.875-12.06,23.625-19.84,34.391c-8.341,11.525-17.216,22.647-25.495,34.233
+                       C331.087,237.201,331.683,242.535,341.098,251.727z"/>
+                   <g>
+                   </g>
+                   <g>
+                   </g>
+                   <g>
+                   </g>
+                   <g>
+                   </g>
+                   <g>
+                   </g>
+                   <g>
+                   </g>
+                   <g>
+                   </g>
+                   <g>
+                   </g>
+                   <g>
+                   </g>
+                   <g>
+                   </g>
+                   <g>
+                   </g>
+                   <g>
+                   </g>
+                   <g>
+                   </g>
+                   <g>
+                   </g>
+                   <g>
+                   </g>
+                   </svg></a></li>
+                    <li><a class="social-button" href=""><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 29.94 29.94" style="enable-background:new 0 0 29.94 29.94;" xml:space="preserve">
+                   <g>
+                       <path d="M27.56,0.684H2.383C1.065,0.684,0,1.748,0,3.064v23.813c0,1.312,1.065,2.379,2.383,2.379H27.56
+                           c1.312,0,2.38-1.066,2.38-2.379V3.064C29.939,1.748,28.871,0.684,27.56,0.684z M20.125,9.167c-0.619-0.362-1.11-0.648-1.727-0.648
+                           c-0.604,0-1.12,0.151-1.384,0.405c-0.264,0.252-0.395,0.74-0.395,1.461v1.067h3.229l-0.699,2.968h-2.53v9.862h-4.056V14.42H10.67
+                           v-2.968h1.895v-1.133c0-1.193,0.143-1.907,0.425-2.496c0.281-0.587,0.826-1.241,1.584-1.611c0.757-0.369,1.877-0.555,3.036-0.555
+                           c1.188,0,2.116,0.396,3.254,0.715L20.125,9.167z"/>
+                       <g>
+                       </g>
+                       <g>
+                       </g>
+                       <g>
+                       </g>
+                       <g>
+                       </g>
+                       <g>
+                       </g>
+                       <g>
+                       </g>
+                       <g>
+                       </g>
+                       <g>
+                       </g>
+                       <g>
+                       </g>
+                       <g>
+                       </g>
+                       <g>
+                       </g>
+                       <g>
+                       </g>
+                       <g>
+                       </g>
+                       <g>
+                       </g>
+                       <g>
+                       </g>
+                   </g>
+                   <g>
+                   </g>
+                   <g>
+                   </g>
+                   <g>
+                   </g>
+                   <g>
+                   </g>
+                   <g>
+                   </g>
+                   <g>
+                   </g>
+                   <g>
+                   </g>
+                   <g>
+                   </g>
+                   <g>
+                   </g>
+                   <g>
+                   </g>
+                   <g>
+                   </g>
+                   <g>
+                   </g>
+                   <g>
+                   </g>
+                   <g>
+                   </g>
+                   <g>
+                   </g>
+                   </svg>
+                   </a></li>
+                    <li><a class="social-button" href=""><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 455 455" style="enable-background:new 0 0 455 455;" xml:space="preserve">
+                   <g>
+                       <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M336.351,106.363h-35.83c-6.986,0.051-12.346,5.157-12.396,12.104
+                           c-0.051,12.155-0.051,24.259,0,36.414c0.051,6.897,5.411,12.066,12.307,12.066h35.817c7.189,0,12.447-5.22,12.447-12.409
+                           c0.051-11.914,0.051-23.865,0-35.767C348.696,111.622,343.438,106.415,336.351,106.363z"/>
+                       <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M227.591,288.104c33.493-0.051,60.534-27.143,60.534-60.635
+                           c-0.051-33.493-27.142-60.521-60.635-60.521c-33.378,0-60.47,27.129-60.521,60.47C166.918,260.961,194.06,288.104,227.591,288.104z
+                           "/>
+                       <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M318.239,261.698c-7.24,19.102-19.344,34.433-36.173,45.952
+                           c-30.355,20.729-70.046,22.469-101.951,4.458c-16.131-9.132-28.781-21.782-37.608-38.104
+                           c-12.104-22.329-14.886-45.939-8.777-70.592h-27.345v132.51c0,7.595,5.169,12.752,12.752,12.752c4.864,0.051,9.678,0,14.543,0
+                           H335.55c8.192,0,13.146-5.004,13.146-13.197V203.361h-27.383C326.33,223.2,325.427,242.646,318.239,261.698z"/>
+                       <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M0,0v455h455V0H0z M384.97,105.919V349.17
+                           c0,17.909-13.844,33.493-31.651,35.576c-1.397,0.152-2.781,0.254-4.166,0.254H105.89c-17.604,0-33.087-13.552-35.423-30.966
+                           c-0.292-2.032-0.445-4.115-0.445-6.147V106.96c0-18.162,12.155-32.947,30.012-36.363c2.134-0.406,4.37-0.546,6.554-0.546
+                           C187.253,70,267.879,70,348.505,70c18.9,0,34.433,14.035,36.363,32.795C385.021,103.836,384.97,104.877,384.97,105.919z"/>
+                   </g>
+                   <g>
+                   </g>
+                   <g>
+                   </g>
+                   <g>
+                   </g>
+                   <g>
+                   </g>
+                   <g>
+                   </g>
+                   <g>
+                   </g>
+                   <g>
+                   </g>
+                   <g>
+                   </g>
+                   <g>
+                   </g>
+                   <g>
+                   </g>
+                   <g>
+                   </g>
+                   <g>
+                   </g>
+                   <g>
+                   </g>
+                   <g>
+                   </g>
+                   <g>
+                   </g>
+                   </svg>
+                   </a></li>
+            </ul>
+        </div>
+        <p class="footer-copyright">
+            <b>вёрстка</b>
+            <a class="button" href="">верстка</a>
+        </p>
+        </div>
+    </footer>
+
+        <div class="user-form">
+            <h2>Личный кабинет</h2>
+            <p>Введите пожалуйста свой логин и пароль</p>
+            <form class="form-index" action="#" method="POST">
+                <p class="user-type">
+                    <label for="userlog"></label>
+                    <input type="text" id="userlog" name="userlogin" value="" placeholder="Логин">
+                </p>
+                <p class="user-type">
+                    <label for="userpas"></label>
+                    <input type="password" id="userpas" name="userpassword" value="" placeholder="Пароль">
+                </p>
+                <div class="remember-check">
+                <p>
+                    <input type="checkbox" value="yes" checked name="rememberME" id="remember">
+                    <label for="remember">Запомните меня</label>
+                </p>
+                <a href="">Я забыл пароль!</a>
+                </div>
+                <p>
+                    <button type="button">Войти</button>
+                </p>
+            </form>
+        </div>    
+</body>
+</html>
