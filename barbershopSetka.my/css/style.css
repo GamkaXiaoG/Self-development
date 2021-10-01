@@ -37,6 +37,11 @@ button:focus{
     background-color: #663d15;
 }
 
+.visually-hidden{
+    position: absolute;
+    clip: rect(0,0,0,0);
+}
+
 .main-header{
     margin-bottom: 75px;
     min-height: 285px;
@@ -418,6 +423,10 @@ main h1{
     font-style: inherit;
     padding: 15px;
 }
+.form-index button{
+    margin-top: 16px;
+}
+
 .user-type input{
     width: calc(100% - 35px);
 }
@@ -434,12 +443,54 @@ main h1{
 .remember-check{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
+    position: relative;
+}
+.remember-check a:hover{
+    text-decoration: none;
 }
 
-/* .remember-check input[type=checkbox]{
-    position: absolute;
-    clip: rect(0,0,0,0);
-} */
+.login-checkbox{
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
 
-.remember-check label
+.login-checkbox:hover,
+.login-checkbox:focus{
+    color: #663d15;
+}
+
+.login-checkbox input[type="checkbox"] + .checkbox-indicator{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    border: 2px solid #000000;
+}
+
+.login-checkbox input[type="checkbox"]:focus + .checkbox-indicator{
+    border-color: #663d15;
+    outline: thin dotted;
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after{
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 1px;
+    width: 15px;
+    height: 2px;
+    background-color: #000000;
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before{
+    transform: rotate(45deg);
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after{
+    transform: rotate(-45deg);
+}
