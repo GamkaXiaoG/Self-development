@@ -24,7 +24,7 @@
                 <li><a href="">Контакты</a></li>
             </ul>
             <ul class="user-navigation">
-                <li><a href="">Вход</a></li>
+                <li><a class="user-login" href="#">Вход</a></li>
             </ul>
             </div>
         </div>
@@ -95,8 +95,8 @@
         <ul class="contacts-item">
             <li class="contacts">
                 <p>Барбершоп "Бородинский"<br>
-        Адрес:Г. Санкт-Петербург, Б.Конюшенная, Д. 19/8<br>
-        Телефон: +7 (495) 666-02-66</p>
+                Lorem ipsum dolor Lorem ipsum dolor
+        Телефон: +7 (123) 456-78-90</p>
             </li>
             <li>
                 <p>Время работы:<br>
@@ -137,10 +137,9 @@
     <footer class="main-footer">
         <div class="container">
     <div class="footer-contacts">
-        <p >Барбершоп "Бородинский"<br>
-        Адрес:Г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-        <a href="">Как нас найти?</a><br>
-        Телефон : +7 (495) 666-02-66</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a molestie orci. Morbi a semper magna. Fusce quis ante ut neque blandit euismod
+        <a href="">Lorem ipsum dolor</a><br>
+        Телефон : +7 (123) 456-78-90</p>
     </div>
 
         <div class="footer-social">
@@ -323,7 +322,7 @@
         </div>
     </footer>
 
-        <div class="user-form">
+        <div class="user-form modal">
             <h2>Личный кабинет</h2>
             <p>Введите пожалуйста свой логин и пароль</p>
             <form class="form-index" action="#" method="POST">
@@ -345,8 +344,29 @@
                 </div>
                 <p>
                     <button type="button">Войти</button>
+                    <button type="button" class="modal-close"></button>
                 </p>
             </form>
         </div>    
+        <div class="map-index modal">
+            <h2 class="visually-hidden">Как до нас добраться?</h2>
+            <img src="/jpg/map mask.jpg" alt="">
+        </div>
+            <script>
+                let link = document.querySelector(".user-login");
+                let popup = document.querySelector(".user-form");
+                let close = document.querySelector(".modal-close");
+                
+                    link.addEventListener("click", function (evt) {
+                        evt.preventDefault; 
+                        popup.classList.add("modal-show");
+                    });
+
+                    close.addEventListener("click", function (evt) {
+                        evt.preventDefault();
+                        popup.classList.remove("modal-show");
+                    });
+    
+            </script>
 </body>
 </html>

@@ -12,6 +12,7 @@ body{
     background-size: cover;
     background-position: center;
     object-fit: cover;
+    background-color: #000000;
 }
 
 a {
@@ -77,6 +78,14 @@ button:focus{
     margin: 0 auto;
     padding: 0 10px;
 }
+
+.modal{
+    position: fixed;
+    background-color: #f8f5f2;
+    display: none;
+}
+
+
 
 .main-navigation-wrapper .container{
     display: flex;
@@ -338,16 +347,16 @@ main h1{
     width: 27px;
     height: 27px;
 }
-.social-button svg:hover{
-    /* background-color: black; */
-}
+
 .social-button svg:hover{
     background-color: #fff;
 }
+
 .footer-contacts{
     width: 320px;
     margin-right: 80px;
 }
+
 .social-flex{
     display: flex;
     justify-content: space-between;
@@ -382,28 +391,68 @@ main h1{
     width: 460px    ;
     padding: 45px 75px;
     position: fixed;
-    top: 5%;
-    left: 20%;
+    top: 70px;
+    right: 140px;
     box-sizing: border-box;
+    display: none;
 }
 
-.user-form::before, .user-form::after{
+.modal-show{
+    display: block; 
+}
+
+.modal-close{
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    background-color: transparent;
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    cursor: pointer;
+}
+.modal-close:hover,
+.modal-close:focus,
+.modal-close:active{
+    background-color: transparent;
+}
+
+.modal-close::before, .modal-close::after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background-color: #d0d0d0;
+    height: 3px;
+    width: 20px;
+}
+
+.modal-close::after{
+    transform: rotate(45deg);
+}
+
+.modal-close::before{
+    transform: rotate(-45deg);
+}
+
+/* .user-form::before, .user-form::after{
     content: "";
     position: absolute;
     top: 10px;
     background-color: #d0d0d0;
     right: -25px;
     height: 3px;
-    width: 15px;
-}
+    width: 20px;
+} */
 
-.user-form::after{
+/* .user-form::after{
     transform: rotate(45deg);
 }
 
 .user-form::before{
     transform: rotate(-45deg);
-}
+} */
 
 .user-form h2{
     margin-top: 0px;  
@@ -493,4 +542,38 @@ main h1{
 
 .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after{
     transform: rotate(-45deg);
+}
+
+.map-index{
+    top: 50%;
+    left: 50%;
+    width: 766px;
+    height: 561px;
+    margin-top: -280px;
+    margin-left: -390px;
+    padding: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .9);
+    display: none;
+}
+
+.map-index::after,
+.map-index::before{
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: -25px;
+    height: 3px;
+    width: 20px;
+    background-color: #d0d0d0;
+}
+
+.map-index::after{
+    transform: rotate(45deg);
+}
+
+.map-index::before{
+    transform: rotate(-45deg);
+}
+.hidden{
+    display: none;  
 }
